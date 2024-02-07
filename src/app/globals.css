@@ -1,0 +1,670 @@
+/* CSS Fonts Imports START */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* CSS Fonts Import END  */
+
+:root {
+  --border-padding: 0rem 1rem;
+}
+
+/* Global Style START */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Global Style END */
+
+
+/* Home Page START */
+.HomeMain {
+  width: 100%;
+}
+
+.HomeMainBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.HomeMainHeading1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 7vw;
+}
+
+.HomeMainHeading2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 5vw;
+  background-image: radial-gradient(circle at 10% 20%, rgb(255, 186, 59) 0%, rgb(255, 102, 0) 30%, rgb(255, 41, 88) 70%, rgb(255, 186, 59) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.HomeMainPara {
+  padding: 1rem 0rem;
+}
+
+/* Home Page START */
+
+/* Navigation Bar CSS START */
+
+.Navbar {
+  display: flex;
+  gap: 10vw;
+  padding: 0rem 0rem 0rem 0rem;
+  height: 4.5rem;
+}
+
+.NavbarLogo {
+  width: 4rem;
+  height: 70%;
+}
+
+.NavbarLogoLink {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.LoginBtn {
+  flex: 2;
+  display: flex;
+  padding: 0rem 3rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.NavbarContainer2 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.SignOutBTN {
+  height: 2.3rem;
+  width: 7.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 26px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+  transition: ease-in 0.1s;
+}
+
+.createPostBtn {
+  display: flex;
+  height: 2.3rem;
+  width: 7.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 26px;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border: 0px;
+  transition: ease-in 0.1s;
+}
+
+.signInBtn {
+  height: 2.3rem;
+  width: 7.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 26px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid black;
+  transition: ease-in 0.1s;
+}
+
+.signInBtn:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+  font-weight: 600;
+}
+
+.createPostBtn:hover {
+  background-color: rgb(155, 155, 155);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.ProfilePhotoImg {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.MobileMenuBar {
+  display: none;
+}
+
+.HomeMainBanner {
+  padding: var(--border-padding);
+}
+
+/* .NavbarDropdown{
+  display: none;
+} */
+
+
+/* CREATE FORM CSS START*/
+.FormSection {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0rem 2rem;
+}
+
+.FormHeading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding: 1rem 0rem;
+  color: #0080ed;
+}
+
+.FormPara {
+  font-size: 1rem;
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+.FormSectionForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.FormSectionLabel {
+  display: flex;
+  flex-direction: column;
+}
+
+.FormSectionFormSpan {
+  font-weight: bold;
+  padding: 1rem 0rem;
+}
+
+.FormSectionFormTextArea {
+  height: 20vw;
+  border: 0px;
+  background-color: #fafaff;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.FormSectionFormtag {
+  height: 6vw;
+  border: 0px;
+  background-color: #fafaff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+
+/* Bottom BTN's */
+
+.CreateBTN {
+  height: 2.5rem;
+  width: 6.5rem;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: rgb(255, 106, 0);
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.CancelBTN {
+  text-decoration: none;
+  height: 2.5rem;
+  width: 6.5rem;
+  border: 0px;
+  border-radius: 30px;
+  color: #000000;
+  font-weight: 800;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.CancelAndCreateContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
+  padding: 2rem 0rem;
+}
+
+/* CREATE FORM CSS END */
+
+/* HOME FEED CONTAIN CSS START */
+
+.HomeFeed_Container {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search_input {
+  height: 4rem;
+  border: 0px;
+  background-color: #fafaff;
+  padding: 1rem;
+  width: 90vw;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.LoadingMainContainer {
+  height: 90vh;
+  display: flex;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileAnimation {
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.ProfileSkeletonContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HOME FEED CONTAIN CSS END */
+
+/* Prompt Card CSS START */
+.prompt_cardUserContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.PromptCardListContainer {
+  width: 88vw;
+  margin-top: 2rem;
+  padding: 1rem 1rem;
+  border: 2px solid #e7e7e7;
+  border-radius: 21px;
+}
+
+.prompt_cardname {
+  padding: 0rem 1rem;
+}
+
+.promptContainerPara {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.promptContainerTag {
+  padding-top: 1rem;
+  color: #0080ed;
+  cursor: pointer;
+}
+
+.prompt_cardUserName {
+  display: flex;
+}
+
+.CopyPasteSVG {
+  width: 26px;
+  cursor: pointer;
+}
+
+.prompt_card_img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.PromptEditDeleteBTN {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.PromptCardEditBTN {
+  color: rgb(0 195 0);
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 700;
+
+}
+
+.PromptCardDeleteBTN {
+  color: red;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 700;
+
+}
+
+/* Prompt Card CSS END */
+
+/* PromptSkeleton Card CSS START */
+.PromptCardSkeleton {
+  width: 88vw;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #e7e7e7;
+  border-radius: 21px;
+  height: 11.5rem;
+}
+
+.promptInnearContainerSkeleton {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.prompt_cardUserContainerSkeleton {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.prompt_cardUserNameSkeleton {
+  height: 3.1rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.PromptImgSkeleton {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+.prompt_cardnameSkeleton {
+  height: 2.5rem;
+  flex: 2;
+  width: 68vw;
+}
+
+.prompt_cardUsernameSkeleton {
+  height: 1rem;
+  width: 34%;
+  margin: 0.1rem 0rem;
+}
+
+.prompt_cardEmailSkeleton {
+  height: 1rem;
+  width: 40%;
+  margin: 0.1rem 0rem;
+}
+
+.IMGSkeleton {
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
+}
+
+.iconDivSkeleton {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0.1rem;
+}
+
+.promptContainerParaSkeleton {
+  height: 6rem;
+  width: 100%;
+  margin-top: 0.2rem;
+  border-radius: 0.5rem;
+}
+
+.promptContainerTagSkeleton {
+  height: 1.4rem;
+  width: 4rem;
+  margin-top: 0.4rem;
+  border-radius: 0.3rem;
+}
+
+.PromptImgSkeleton,
+.prompt_cardUsernameSkeleton,
+.prompt_cardEmailSkeleton,
+.iconDivSkeleton,
+.promptContainerParaSkeleton,
+.promptContainerTagSkeleton {
+  background: #ffffff;
+  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+  background-size: 200% 100%;
+  animation: 1.5s shine linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+
+/* PromptSkeleton Card CSS END */
+
+
+
+
+/* Profile CSS START */
+.UserLogo {
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.ProfileHeader {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0080ed;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.ProfilePara {
+  padding: 0rem 1rem;
+  font-weight: 700;
+}
+
+/* Profile CSS END */
+
+
+.PromptCard {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProfileMainHeadingDiv {
+  display: flex;
+  flex-direction: column;
+  /* width: 58vw; */
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar Media Quires */
+@media (max-width : 700px) {
+  .LoginBtn {
+    display: none;
+  }
+
+  .Navbar {
+    height: 4rem;
+  }
+
+  .NavbarLogo {
+    height: 80%;
+    cursor: pointer;
+    width: 4rem;
+  }
+
+  .NavbarLogoMobile {
+    width: 3.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+
+  .MobileMenuBar {
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1.5rem;
+  }
+
+  .NavbarLogoLink {
+    justify-content: flex-start;
+    padding-left: 4vw;
+  }
+
+  .NavbarDropdown {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 4.5rem;
+    right: 3rem;
+    align-items: flex-end;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  }
+
+  .dropdown_link {
+    text-decoration: none;
+    height: 2rem;
+    color: black;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .dropdown_link:hover {
+    font-weight: 700;
+  }
+
+  .DropDownSignOutBTN {
+    height: 2.3rem;
+    width: 7.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 26px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    transition: ease-in 0.1s;
+  }
+
+  .DropDownSignOutBTN:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+  }
+
+  /* Home Container Media Quires  */
+
+  .HomeMainHeading2 {
+    font-size: 15vw;
+    padding-left: 2vw;
+  }
+
+  .HomeMainHeading1 {
+    font-size: 10vw;
+  }
+
+  .HomeMainPara {
+    padding: 0.7rem 0rem;
+    font-size: 3vw;
+  }
+
+  .ProfileMainHeadingDiv {
+    /* width: 63vw; */
+  }
+
+  .ProfileHeader {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0080ed;
+    padding: 1rem 1rem 0.5rem 1rem;
+  }
+
+
+}
+
+@media (max-width : 500px) {
+
+  /* Home Container Media Quires  */
+
+  .HomeMainHeading2 {
+    font-size: 17vw;
+  }
+
+  .HomeMainHeading1 {
+    font-size: 14vw;
+  }
+
+  .HomeMainPara {
+    padding: 0.7rem 0rem;
+    font-size: 3vw;
+  }
+
+  .CancelAndCreateContainer {
+    gap: 1rem;
+  }
+
+  .FormSection {
+    padding: 0rem 1rem;
+  }
+
+  .ProfileMainHeadingDiv {
+    width: 100vw;
+  }
+
+  .PromptCardListContainer {
+    width: 94vw;
+  }
+
+  .PromptEditDeleteBTN {
+    margin-top: 1rem;
+  }
+}
+
+
+@media (min-width : 1100px) {
+  .PromptCardListContainer {
+    width: 60vw;
+  }
+}
+
+/* Navigation Bar CSS END*/
